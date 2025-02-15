@@ -10,9 +10,9 @@ This project is an **End-to-End Dashboard** built in **Excel** for monitoring an
 - Provide a visual summary of key hospital performance metrics.
 
 ## 📂 Project Files
-- **Hospital Emergency Room Dataset.csv** - Contains raw hospital ER data, including patient demographics, wait times, and satisfaction scores.
-- **Hospital ER Dashboard Project File.xlsx** - The main Excel file containing data, pivot reports, and the final dashboard.
 - **Hospital ER Dashboard.png** - A snapshot of the completed dashboard.
+- **Hospital ER Dashboard Project File.xlsx** - The main Excel file containing data, pivot reports, and the final dashboard.
+- **Hospital Emergency Room Dataset.csv** - Contains raw hospital ER data, including patient demographics, wait times, and satisfaction scores.
 - **Hospital Logo.png** - The hospital's branding/logo used in the dashboard.
 - **END TO END DASHBOARD PROJECT IN EXCEL.pptx** - A PowerPoint presentation explaining the project steps and methodology.
 
