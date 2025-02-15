@@ -1,74 +1,49 @@
-# 🏥 Hospital Emergency Room Dashboard
+# Hospital Emergency Room Dashboard
 
 ## 📌 Project Overview
-This project focuses on analyzing emergency room patient data to enhance hospital efficiency and patient experience.
-Using **Excel**, we visualize key healthcare metrics, including wait times, patient admissions, and department referrals.
-The dashboard enables **hospital administrators and decision-makers** to quickly assess performance and take necessary actions for improvement.
+This project is an **End-to-End Dashboard** built in **Excel** for monitoring and analyzing hospital emergency room operations. The dashboard provides insights into patient flow, wait times, admission trends, and satisfaction scores to help hospital management make data-driven decisions.
+
+## 🎯 Objectives
+- Track the daily number of ER patients.
+- Analyze patient wait times and trends.
+- Monitor patient satisfaction scores.
+- Provide a visual summary of key hospital performance metrics.
+
+## 📂 Project Files
+- **Hospital Emergency Room Dataset.csv** - Contains raw hospital ER data, including patient demographics, wait times, and satisfaction scores.
+- **Hospital ER Dashboard Project File.xlsx** - The main Excel file containing data, pivot reports, and the final dashboard.
+- **Hospital ER Dashboard.png** - A snapshot of the completed dashboard.
+- **Hospital Logo.png** - The hospital's branding/logo used in the dashboard.
+- **END TO END DASHBOARD PROJECT IN EXCEL.pptx** - A PowerPoint presentation explaining the project steps and methodology.
 
 ## 📊 Key Features
-- **📌 Patient Admission Tracking** – Categorizes admitted vs. non-admitted patients.
-- **📌 Age Distribution Analysis** – Groups patients into specific age ranges.
-- **📌 Wait Time Insights** – Tracks average patient wait time.
-- **📌 Gender Breakdown** – Displays the number of male vs. female patients.
-- **📌 Department Referrals** – Analyzes where patients are referred within the hospital.
-- **📌 Interactive Filters** – Allows users to filter data by month and year.
+- **Pivot Reports:** Summarizes hospital ER data for insights.
+- **Visual Dashboard:** Displays trends in patient visits, wait times, and satisfaction.
+- **Daily Trends Analysis:** Tracks changes over time for better decision-making.
+- **Excel-based Implementation:** No additional software required.
 
-## 📁 Repository Structure
-```plaintext
-📂 hospital-emergency-dashboard
-├── 📊 Hospital Emergency Room Dashboard Project.xlsx  # Dataset
-├── 🖼️ Hospital Dashboard Final.jpg                  # Dashboard visualization
-├── 📄 README.md                                     # Project documentation
-├── 📂 Power BI Files (Coming Soon)                 # Power BI dashboard files
-└── 📄 END TO END DASHBOARD PROJECT IN EXCEL.pptx    # Project presentation
-```
+## 🚀 How to Use
+1. Open **Hospital ER Dashboard Project File.xlsx**.
+2. Explore the different sheets:
+   - **Pivote Report** (for summarized insights)
+   - **Dashboard** (for visual analytics)
+   - **Daily ER No of Patients** (patient flow tracking)
+   - **Average Wait Time Daily Trend** (wait time trends)
+   - **Satisfaction Score Daily Trend** (patient experience analysis)
+3. Update the dataset if needed to refresh the reports.
 
-## 📊 Data Processing & Formulas
-### **📅 Calendar Table Creation**
-```DAX
-= List.Dates(#date(2023,01,01),731,#duration(1,0,0,0))
-```
-### **👥 Age Group Classification**
-```DAX
-=IF([Patient Age]>=70,"70-79",
-IF([Patient Age]>=60,"60-69",
-IF([Patient Age]>=45,"45-59",
-IF([Patient Age]>=30,"30-44",
-IF([Patient Age]>=15,"15-29",
-IF([Patient Age]>=5,"05-14","0-4"))))))
-```
-### **⏳ Patient Attended Within Time**
-```DAX
-= IF ([Patient  Waittime ]<30, "Within Time" , "Delayed" )
-```
-### **📈 Patient Satisfaction Score Calculation**
-```DAX
-= AVERAGE([Satisfaction Score])
-```
+## 📈 Insights from the Dashboard
+- Helps identify peak hours for hospital ER visits.
+- Allows tracking of patient wait time efficiency.
+- Provides an overview of patient satisfaction trends.
 
-## 🛠 Technology Stack
-- **📊 Excel** – Data cleaning, storage, and pivot tables.
-- **📈 Power BI** – Interactive data visualization.
-- **🖩 DAX (Data Analysis Expressions)** – Advanced data modeling.
-- **📂 CSV/XLSX** – Standardized data formats.
+## 🛠 Tools Used
+- **Microsoft Excel** (Pivot tables, charts, and dashboards)
+- **PowerPoint** (for project documentation)
 
-## 🤝 Contribution Guidelines
-1. **Fork the Repository** – Click the **Fork** button to copy the repo.
-2. **Clone the Repository** – Run the command:
-   ```bash
-   git clone https://github.com/your-username/hospital-emergency-dashboard.git
-   ```
-3. **Make Improvements** – Enhance charts, optimize formulas, or add new visuals.
-4. **Submit a Pull Request** – Push your changes and open a PR for review.
+## 🤝 Contributions
+This project was developed for learning and practical implementation. Feel free to contribute or improve upon the existing work!
 
-## 🎯 Future Enhancements
-- ✅ Integration with **real-time hospital data**.
-- ✅ Addition of **more detailed patient insights**.
-- ✅ Development of a **Power BI web dashboard**.
-- ✅ Implementation of **predictive analytics for hospital efficiency**.
-
-## 📢 Join Us!
-Let’s collaborate to create a **data-driven solution for healthcare analytics!** 🚀
-
-#️⃣ **Tags:** `#DataAnalytics` `#Excel` `#PowerBI` `#DAX` `#Healthcare` `#Visualization` `#Dashboard`
+---
+**⭐ If you find this project useful, don't forget to star this repository! ⭐**
 
